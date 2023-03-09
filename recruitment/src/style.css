@@ -1,0 +1,67 @@
+
+form .header {
+    font-weight: bold;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 1%;
+}
+
+.input-box {
+    position: relative;
+}
+
+.short-input {
+    width: 47.5%;
+}
+
+
+.input-box span {
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    padding: 10px;
+    color: #b1b1b1;
+    font-weight: 300;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.input-box input:focus ~ span, .input-box input:valid ~ span, .input-box select:focus ~ span, .input-box select:valid ~ span{
+    transform: translateX(1px) translateY(-10px);
+    font-size:small;
+    font-weight: 500;
+    margin-bottom: 5%;
+    color: black;
+}
+
+form .form-twin-div {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 50px;
+    margin-bottom: 3%;
+}
+
+form .form-single-div {
+    width: 100%;
+    margin-left: 36px;
+    height: 50px;
+    margin-bottom: 3%;
+}
+
+form button {
+    width: 92%;
+    padding: 8px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background: #1AAC02;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+}

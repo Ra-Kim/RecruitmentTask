@@ -1,7 +1,7 @@
-import styled from 'styled-components'
+import styled , { css } from 'styled-components'
 
 export const Container = styled.div`
-    width: 80%;
+    width: 85%;
     min-height: 85vh;
     margin: auto;
     margin-top: 50px;
@@ -9,9 +9,10 @@ export const Container = styled.div`
     grid-template-columns: 65% 35%;
 
     .order {
+        margin-top: 7.5%;
         background-color: white;
-        height: 50%;
-        padding: 5%;
+        height: 45%;
+        padding: 4.5%;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.04);
         border-radius: 4px;
     }
@@ -42,4 +43,30 @@ export const Container = styled.div`
         align-items: center;
         margin-block: 8px;
     }
+`
+const SIZE = {
+    short: css`
+        width: 100%;
+    `,
+    long: css`
+        width: 90%;
+    `
+}
+export const StyledInput = styled.input`
+    height: 44px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+    outline: none;
+    background: #fff;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.04);
+    border-radius: 4px;
+    padding-inline-start: 15px;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 2px;
+    color: #111;
+
+    ${(props) =>  props.width && SIZE[props.width]}
 `
