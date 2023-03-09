@@ -11,8 +11,8 @@ export const Container = styled.div`
     .order {
         margin-top: 7.5%;
         background-color: white;
-        height: 45%;
-        padding: 4.5%;
+        height: 41%;
+        padding: 5%;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.04);
         border-radius: 4px;
     }

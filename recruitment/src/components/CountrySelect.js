@@ -8,6 +8,7 @@ const CountrySelect = () => {
         border:"none",
         fontSize: 17
     }}>
+    <option value="NG">Nigeria</option>
     <option value="AF">Afghanistan</option>
     <option value="AX">Åland Islands</option>
     <option value="AL">Albania</option>
@@ -169,7 +170,6 @@ const CountrySelect = () => {
     <option value="NZ">New Zealand</option>
     <option value="NI">Nicaragua</option>
     <option value="NE">Niger</option>
-    <option value="NG" default>Nigeria</option>
     <option value="NU">Niue</option>
     <option value="NF">Norfolk Island</option>
     <option value="MP">Northern Mariana Islands</option>

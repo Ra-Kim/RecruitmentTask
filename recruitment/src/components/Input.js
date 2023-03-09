@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyledInput } from './styled/PageStyles'
 
-const Input = ({width, placeholder, type, pattern, name, id}) => {
+const Input = ({width, placeholder, type, pattern, name, id, value, onChange}) => {
   return (
     <StyledInput 
       width={width} 
@@ -10,6 +10,8 @@ const Input = ({width, placeholder, type, pattern, name, id}) => {
       pattern = {pattern}
       id = {id}
       name = {name}
+      value = {value}
+      onChange = {onChange}
       required >
 
     </StyledInput>
