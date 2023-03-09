@@ -2,6 +2,7 @@
 form .header {
     font-weight: bold;
     display: flex;
+    align-items: center;
     gap: 10px;
     margin-bottom: 1%;
 }
@@ -64,4 +65,49 @@ form button {
     color: #fff;
     font-size: 14px;
     font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+    form {
+        border-bottom: 1px solid black;
+        position: relative;
+    }
+
+    form .form-twin-div {
+        display: block;
+        width: 100%;
+    }
+
+    form .form-single-div {
+        margin-left: 0;
+    }
+
+    form .form-twin-div {
+        flex-direction: column;
+        width: 100%;
+        height: 120px;
+    }
+
+    .input-box {
+        height: 50px;
+        margin-block: 20px;
+    }
+
+    .short-input {
+        width: 90%;
+    }
+
+    form .form-twin-div input {
+        display: block;
+    }
+
+    form .header {
+        margin-top: 25px;
+    }
+
+    form button {
+        position: absolute;
+        bottom: -50%;
+        width: 100%;
+    }
 }

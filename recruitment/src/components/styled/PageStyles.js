@@ -43,6 +43,14 @@ export const Container = styled.div`
         align-items: center;
         margin-block: 8px;
     }
+
+    @media only screen and (max-width: 600px) {
+        display: block;
+        
+        .order {
+            margin-bottom: 150px;
+        }
+    }
 `
 const SIZE = {
     short: css`
